@@ -1,0 +1,4 @@
+1.latihan 
+buat sbuah class yang memiliki minimal satu method
+buat sebuah sub-class (inherintance) yang memilik minimal satu method
+buaat sebuah object pada sub-class yang memanggil method dari class 

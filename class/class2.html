@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class RUMAH {
+          constructor(alamat,sertipikat) {
+            this.Alamat = alamat;
+            this.Sertipikat = sertipikat;
+          }
+          present() {
+            return ' area prumahan daerah  ' + this.Alamat + 'lengkap dengan sertipikat ' + this.Sertipikat;
+          }
+        }
+        
+        class harga extends RUMAH {
+          constructor(alamat, sertipikat,jual) {
+            super(alamat,sertipikat);
+            this.Jual = jual;
+          }
+          show() {
+            return this.present() + 'di jual dengan harga ' + this.Jual;
+          }
+        }
+        
+        mycar = new harga ("lombok utara ", "tanah dan rumah ","Rp.100.000.000.");
+        document.getElementById("demo").innerHTML = mycar.show();
+        </script>
+    
+</body>
+</html>
